@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP JavaScript</title>
+</head>
+<body>
+
+    <h1>Exercice 4</h1>
+
+    <script>
+        // 1 Demander le prénom
+        let prenom = window.prompt("Quel est votre prénom ?");
+
+        // 2 Demander l'âge
+        let age = window.prompt("Quel est votre âge ?");
+
+        // 3 Convertir l'âge en nombre
+        age = Number(age);
+
+        // 4 Calculer l'année de naissance approximative
+        let anneeNaissance = 2025 - age;
+
+        // 5 Afficher une alerte
+        window.alert(`Bonjour ${prenom} ! Vous êtes né(e) vers ${anneeNaissance}.`);
+
+        // 6 Demander confirmation pour afficher dans la console
+        let afficherConsole = window.confirm("Afficher dans la console ?");
+
+        // 7 Si l'utilisateur clique OK
+        if (afficherConsole === true) {
+            console.log("Prénom :", prenom);
+            console.log("Âge :", age);
+            console.log("Année de naissance :", anneeNaissance);
+        }
+    </script>
+
+</body>
+</html>
